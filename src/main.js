@@ -2,6 +2,8 @@ import "./style.css";
 
 const todos = [];
 
+// object listItem
+
 document.getElementById(list);
 const li = document.createElement("li");
 
