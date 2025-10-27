@@ -1,11 +1,24 @@
 import "./style.css";
 
-const todos = [];
+const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköpslista", "Handla", "Byt lakan"];
+//const task = new task();
+//const ul = document.getElementById(task);
+//todos[0] = "Boka tvättid";
 
+// loop through each todo
+todos.forEach((todos) => {
+    console.log(todos);
+});
+
+//const task = new task();
 // object listItem
+//const task {
+    
+    //this.innerHTML;
+//}
 
-document.getElementById(list);
-const li = document.createElement("li");
+/*
+// addEventListener
 
  // innerHTML = "";
 
@@ -14,3 +27,4 @@ function addToList(innerHTML) {
 
     console.log(li);
 }
+    */
