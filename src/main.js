@@ -10,7 +10,11 @@ class Todo {
 }
 
 // Add new todo for each list item:
+const todo1 = new Todo("Städa");
 
+// Use push() Method to add bojects to list:
+
+// Take a uset input as the object:
 
 // Create list that takes in todo:
 const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköpslista", "Handla", "Byt lakan"];
@@ -20,7 +24,7 @@ const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköp
 //todos[0] = "Boka tvättid";
 
 
-// loop through each todo/length of list?
+// loop through each todo/length of list? Use toString() Method!
 todos.forEach((todos) => {
     console.log(todos);
 });
