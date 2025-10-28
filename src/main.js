@@ -14,7 +14,9 @@ todos.forEach((todos) => {
     // Add objects named todo to make todos list of objects
 
 class Todo {
-    
+    constructor(todo){
+        this.todo = todo;
+    }
 }
 
 // ------------------------------------------------------------------------------------
