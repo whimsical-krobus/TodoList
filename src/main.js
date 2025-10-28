@@ -1,7 +1,6 @@
 import "./style.css";
 
-// Add class for objects
-    // Add objects named todo to make todos list of objects
+// Add class for objects and a constructor named todo to make todos list of objects:
 
 class Todo {
     constructor(todo){
@@ -19,10 +18,6 @@ const todo1 = new Todo("Städa");
 // Create list that takes in todo:
 const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköpslista", "Handla", "Byt lakan"];
 
-//const task = new task();
-//const ul = document.getElementById(task);
-//todos[0] = "Boka tvättid";
-
 
 // loop through each todo/length of list? Use toString() Method!
 todos.forEach((todos) => {
@@ -30,18 +25,6 @@ todos.forEach((todos) => {
 });
 
 // ------------------------------------------------------------------------------------
-
-/* Add div for tasks (elements in todo)
-const div = document.createElement("div");
-
-div.className = "todo";
-//this.task = new task()
-*/
-// object listItem
-//const tasks {
-    
-    //this.innerHTML;
-//}
 
 /*
 // addEventListener
