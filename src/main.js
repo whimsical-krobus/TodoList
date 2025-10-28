@@ -5,14 +5,28 @@ const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköp
 //const ul = document.getElementById(task);
 //todos[0] = "Boka tvättid";
 
-// loop through each todo
+// loop through each todo/length of list?
 todos.forEach((todos) => {
     console.log(todos);
 });
 
-//const task = new task();
+// Add class for objects
+    // Add objects named todo to make todos list of objects
+
+class Todo {
+    
+}
+
+// ------------------------------------------------------------------------------------
+
+/* Add div for tasks (elements in todo)
+const div = document.createElement("div");
+
+div.className = "todo";
+//this.task = new task()
+*/
 // object listItem
-//const task {
+//const tasks {
     
     //this.innerHTML;
 //}
