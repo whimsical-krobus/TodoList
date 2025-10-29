@@ -17,7 +17,14 @@ const todo1 = new Todo("Städa");
 // Take a user input as the object:
 
 // Create list that takes in todo:
-const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköpslista", "Handla", "Byt lakan"];
+const todos = [
+    "Boka tvättid", 
+    "Släng sopor", 
+    "Töm diskmaskin", 
+    "Skriv inköpslista", 
+    "Handla", 
+    "Byt lakan"
+];
 
 
 // loop through each todo/length of list? Use toString() Method!
@@ -26,7 +33,7 @@ todos.forEach((todos) => {
 });
 
 // Display list on screen, create a div using DOM
-const div = document.createElement("div");
+//const div = document.createElement("div");
 //document.querySelector("#list-container");
 const list = document.querySelector("#list");
 
