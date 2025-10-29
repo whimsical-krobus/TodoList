@@ -8,12 +8,14 @@ class Todo {
     }
 }
 
+// Display list on screen, create a div using DOM
+
 // Add new todo for each list item:
 const todo1 = new Todo("Städa");
 
 // Use push() Method to add bojects to list:
 
-// Take a uset input as the object:
+// Take a user input as the object:
 
 // Create list that takes in todo:
 const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköpslista", "Handla", "Byt lakan"];
