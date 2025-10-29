@@ -8,11 +8,10 @@ class Todo {
     }
 }
 
-
 // Add new todo for each list item:
 const todo1 = new Todo("Städa");
 
-// Use push() Method to add bojects to list:
+// Use push() Method to add objects to list:
 
 // Take a user input as the object:
 
@@ -26,24 +25,16 @@ const todos = [
     "Byt lakan"
 ];
 
-
 // loop through each todo/length of list? Use toString() Method!
 todos.forEach((todos) => {
     console.log(todos);
 });
 
 // Display list on screen, create a div using DOM
-//const div = document.createElement("div");
-//document.querySelector("#list-container");
 const list = document.querySelector("#list");
 
 list.append(todos);
 //document.append("todos");
-
-//div.append(todos);
-
-//div.className = "list";
-//div.innerHTML = todos;
 
 // ------------------------------------------------------------------------------------
 
