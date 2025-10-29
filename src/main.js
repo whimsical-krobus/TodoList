@@ -8,7 +8,6 @@ class Todo {
     }
 }
 
-// Display list on screen, create a div using DOM
 
 // Add new todo for each list item:
 const todo1 = new Todo("Städa");
@@ -25,6 +24,12 @@ const todos = ["Boka tvättid", "Släng sopor", "Töm diskmaskin", "Skriv inköp
 todos.forEach((todos) => {
     console.log(todos);
 });
+
+// Display list on screen, create a div using DOM
+const div = document.createElement("div");
+
+div.className = "list";
+div.innerHTML = todos;
 
 // ------------------------------------------------------------------------------------
 
