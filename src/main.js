@@ -27,9 +27,16 @@ todos.forEach((todos) => {
 
 // Display list on screen, create a div using DOM
 const div = document.createElement("div");
+//document.querySelector("#list-container");
+const list = document.querySelector("#list");
 
-div.className = "list";
-div.innerHTML = todos;
+list.append(todos);
+//document.append("todos");
+
+//div.append(todos);
+
+//div.className = "list";
+//div.innerHTML = todos;
 
 // ------------------------------------------------------------------------------------
 
