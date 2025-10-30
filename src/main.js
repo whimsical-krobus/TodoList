@@ -33,6 +33,7 @@ todos.forEach((todos) => {
     // Use push() Method to add objects to list:
     //list.append(todo);
     console.log(todos);
+    return todos;
 });
 
 
