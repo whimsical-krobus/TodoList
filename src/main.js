@@ -9,7 +9,7 @@ class Todo {
 }
 
 // Add new todo for each list item:
-const todo1 = new Todo("Städa");
+//const todo1 = new Todo("Städa");
 
 // Use push() Method to add objects to list:
 
@@ -25,13 +25,17 @@ const todos = [
     "Byt lakan"
 ];
 
+// Display list on screen, create a div using DOM
+const list = document.querySelector("#list");
+
 // loop through each todo/length of list? Use toString() Method!
 todos.forEach((todos) => {
+    // Use push() Method to add objects to list:
+    //list.append(todo);
     console.log(todos);
 });
 
-// Display list on screen, create a div using DOM
-const list = document.querySelector("#list");
+
 
 list.append(todos);
 //document.append("todos");
