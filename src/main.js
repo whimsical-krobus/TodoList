@@ -7,6 +7,14 @@ class Todo {
         this.todo = todo;
     }
 }
+/*
+class Task {
+
+    constructor(task) {
+        this.Task = [];
+    }
+}
+    */
 
 // Add new todo for each list item:
 //const todo1 = new Todo("Städa");
@@ -41,8 +49,6 @@ todos.forEach((todos) => {
 list.append(todos);
 //document.append("todos");
 
-// ------------------------------------------------------------------------------------
-
 /*
 // addEventListener
 
@@ -54,3 +60,8 @@ function addToList(innerHTML) {
     console.log(li);
 }
     */
+
+
+const div = document.createElement("div");
+
+div.id = "container";
