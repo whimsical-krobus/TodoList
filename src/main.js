@@ -11,7 +11,14 @@ class Todo {
 const app = document.getElementById("app");
 
 // Add new todo for each list title:
-//const todo1 = new Todo("Städa");
+const todo1 = new Todo("Städa");
+const todo2 = new Todo("Boka tvättid");
+const todo3 = new Todo("Släng sopor");
+const todo4 = new Todo("Töm diskmaskin");
+const todo5 = new Todo("Skriv inköpslista");
+const todo6 = new Todo("Handla");
+const todo7 = new Todo("Byt lakan");
+
 
 // Use push() Method to add objects to list:
 
@@ -25,27 +32,27 @@ const todo = [
     "Byt lakan"
 ];
 */
-// Display list on screen, create a div using DOM
-//const list = document.querySelector("#list");
 
 // loop through each todo/length of list? Use toString() Method!
 
-const list = [];
+const list = [todo1, todo2, todo3, todo4, todo5, todo6, todo7];
+
+console.log(list);
 
 list.forEach((todo) => {
-    console.log(div);
+    console.log(todo);
 
     const div = document.createElement("div");
     const title = document.createElement("h2");
     const isDone = document.createElement("input");
     const task = document.createElement("input");
 
-    div.className = "wrapper";
-    title.innerHTML = wrapper.title;
+    div.className = div; // varför funkar det med div och inte "wrapper"?
+    title.innerHTML = div.title;
     isDone.type = "checkbox";
-    isDone.checked = wrapper.isDone;
+    isDone.checked = div.isDone;
     isDone.disabled = true;
-    task.type = "";
+    task.type = "form";
 
 
     div.appendChild(title);
@@ -55,9 +62,7 @@ list.forEach((todo) => {
 });
 
 
-
 //list.append(todo);
-//document.append("todos");
 
 /*
 // addEventListener
@@ -70,5 +75,3 @@ function addToList(innerHTML) {
     console.log(li);
 }
     */
-
-//const array = [];
