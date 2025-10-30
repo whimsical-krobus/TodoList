@@ -41,6 +41,8 @@ console.log(list);
 
 list.forEach((todo) => {
     console.log(todo);
+    //list.innerHTML = todo.toString();
+    //return list;
 
     const div = document.createElement("div");
     const title = document.createElement("h2");
@@ -48,7 +50,7 @@ list.forEach((todo) => {
     const task = document.createElement("input");
 
     div.className = div; // varför funkar det med div och inte "wrapper"?
-    title.innerHTML = div.title;
+    title.innerHTML = list.toString(todo1);
     isDone.type = "checkbox";
     isDone.checked = div.isDone;
     isDone.disabled = true;
