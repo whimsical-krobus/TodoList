@@ -16,7 +16,7 @@ class Task {
 }
     */
 
-// Add new todo for each list item:
+// Add new todo for each list title:
 //const todo1 = new Todo("Städa");
 
 // Use push() Method to add objects to list:
@@ -63,5 +63,16 @@ function addToList(innerHTML) {
 
 
 const div = document.createElement("div");
+const title = document.createElement("h2");
+
+const isDone = document.createElement("input");
 
 div.id = "container";
+title.innerHTML = "Add task:"
+isDone.type = "checkbox";
+
+div.appendChild(title);
+div.appendChild(isDone);
+
+
+console.log(div);
