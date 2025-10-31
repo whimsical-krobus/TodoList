@@ -70,6 +70,11 @@ const list = document.createElement("ul");
 app.appendChild(list);
 
 // Add function to handle checkbox:
+function removeItem(event){
+    if (event.target.checked) {
+        event.target.parentElement.remove();
+    }
+}
 
 // Add todo contents (todos) as list items:
 todo.forEach(todos => {
@@ -78,6 +83,7 @@ todo.forEach(todos => {
     //Add checkbox to item:
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.addEventListener("change", removeItem);
 
     // Add todo text:
     const itemText = document.createElement("span");
