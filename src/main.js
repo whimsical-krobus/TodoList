@@ -11,6 +11,8 @@ const text = document.createTextNode("Todo List:");
 title.appendChild(text);
 app.appendChild(title);
 
+// Add a h2 heading to todos list:
+
 // Create a list of todos:
 const todos = [
     "Boka tvättid", 
@@ -20,7 +22,6 @@ const todos = [
     "Handla", 
     "Byt lakan"
 ];
-
 
 // Add a ul list and append it to app:
 const list = document.createElement("ul");
@@ -51,6 +52,12 @@ todos.forEach(todo => {
     item.appendChild(checkbox);
     item.appendChild(itemText);
 }); 
+
+// Add a h2 heading to done list:
+
+// Add new empty list to move items to when they are marked as done:
+
+// Add a function to move items that are marked as done to done list:
 
 // Print out todos in console:
 // console.log(todo);
