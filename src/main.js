@@ -3,56 +3,15 @@ import "./style.css";
 // Create reference to html-element app:
 const app = document.getElementById("app");
 
-/*
-// Add class for objects and a constructor named todo to make todos list of objects:
-
-class Todo {
-    constructor(todo){
-        this.todo = todo;
-    }
-}
-
-// Add new todo for each list title:
-const todo1 = new Todo("Städa");
-const todo2 = new Todo("Boka tvättid");
-const todo3 = new Todo("Släng sopor");
-const todo4 = new Todo("Töm diskmaskin");
-const todo5 = new Todo("Skriv inköpslista");
-const todo6 = new Todo("Handla");
-const todo7 = new Todo("Byt lakan");
-
-list.forEach((todo) => {
-    console.log(todo);
-    //list.innerHTML = todo.toString();
-    //return list;
-
-    const div = document.createElement("div");
-    const title = document.createElement("h2");
-    const isDone = document.createElement("input");
-    //const task = document.createElement("input");
-
-    div.className = div; // why does it work with div and not if I name it "wrapper"?
-    title.innerHTML = todo.toString();
-    isDone.type = "checkbox";
-    isDone.checked = div.isDone;
-    isDone.disabled = true;
-    //task.type = "form";
-
-
-    div.appendChild(title);
-    div.appendChild(isDone);
-    //div.appendChild(task);
-    app.appendChild(div);
-});
-*/
-
-// Use push() Method to add objects to list:
+// Add a title/heading to app:
 const title = document.createElement("h1");
 const text = document.createTextNode("Todo List:");
 
+// Append text to title and title to app:
 title.appendChild(text);
 app.appendChild(title);
 
+// Create a list of todos:
 const todo = [
     "Boka tvättid", 
     "Släng sopor", 
@@ -63,10 +22,8 @@ const todo = [
 ];
 
 
-// loop through each todo/length of list?
-
+// Add a ul list and append it to app:
 const list = document.createElement("ul");
-
 app.appendChild(list);
 
 // Add function to handle checkbox:
@@ -89,23 +46,11 @@ todo.forEach(todos => {
     const itemText = document.createElement("span");
     itemText.textContent = todos;
 
+    // Append everything to parent-elements:
     list.appendChild(item);
     item.appendChild(checkbox);
     item.appendChild(itemText);
 }); 
 
-console.log(todo);
-
-//list.append(todo);
-
-/*
-// addEventListener
-
- // innerHTML = "";
-
-function addToList(innerHTML) {
-    // append li to ul
-
-    console.log(li);
-}
-    */
+// Print out todos in console:
+// console.log(todo);
