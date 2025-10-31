@@ -69,6 +69,7 @@ const list = document.createElement("ul");
 
 app.appendChild(list);
 
+// Add function to handle checkbox:
 
 // Add todo contents (todos) as list items:
 todo.forEach(todos => {
