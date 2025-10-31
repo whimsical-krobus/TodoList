@@ -71,7 +71,11 @@ app.appendChild(list);
 
 
 // Add todo contents (todos) as list items:
+todo.forEach(todos => {
+    const item = document.createElement("li");
 
+    list.appendChild(item);
+}); 
 
 console.log(todo);
 
