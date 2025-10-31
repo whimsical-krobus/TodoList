@@ -12,7 +12,7 @@ title.appendChild(text);
 app.appendChild(title);
 
 // Create a list of todos:
-const todo = [
+const todos = [
     "Boka tvättid", 
     "Släng sopor", 
     "Töm diskmaskin", 
@@ -33,8 +33,8 @@ function removeItem(event){
     }
 }
 
-// Add todo contents (todos) as list items:
-todo.forEach(todos => {
+// Add todos contents (todo) as list items:
+todos.forEach(todo => {
     const item = document.createElement("li");
 
     //Add checkbox to item:
@@ -44,7 +44,7 @@ todo.forEach(todos => {
 
     // Add todo text:
     const itemText = document.createElement("span");
-    itemText.textContent = todos;
+    itemText.textContent = todo;
 
     // Append everything to parent-elements:
     list.appendChild(item);
