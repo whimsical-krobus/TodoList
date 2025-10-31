@@ -9,14 +9,14 @@ const app = document.getElementById("app");
 const title = document.createElement("h1");
 const text = document.createTextNode("Todo List:");
 
+// Append text to title and title to app:
+title.appendChild(text);
+app.appendChild(title);
+
 /*================================================================================== To Be Done List: ==================================================================================*/
 
 // Add a div to wrap around To Be Done list:
 
-
-// Append text to title and title to app:
-title.appendChild(text);
-app.appendChild(title);
 
 // Add a h2 heading to todos list:
 const todosHeading = document.createElement("h2");
