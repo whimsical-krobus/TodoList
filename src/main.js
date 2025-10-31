@@ -3,6 +3,7 @@ import "./style.css";
 // Create reference to html-element app
 const app = document.getElementById("app");
 
+
 // Add class for objects and a constructor named todo to make todos list of objects:
 
 class Todo {
@@ -21,20 +22,6 @@ const todo4 = new Todo("Töm diskmaskin");
 const todo5 = new Todo("Skriv inköpslista");
 const todo6 = new Todo("Handla");
 const todo7 = new Todo("Byt lakan");
-
-
-// Use push() Method to add objects to list:
-
-/*
-const todo = [
-    "Boka tvättid", 
-    "Släng sopor", 
-    "Töm diskmaskin", 
-    "Skriv inköpslista", 
-    "Handla", 
-    "Byt lakan"
-];
-*/
 
 // loop through each todo/length of list? Use toString() Method!
 
@@ -66,6 +53,18 @@ list.forEach((todo) => {
     app.appendChild(div);
 });
 
+// Use push() Method to add objects to list:
+
+/*
+const todo = [
+    "Boka tvättid", 
+    "Släng sopor", 
+    "Töm diskmaskin", 
+    "Skriv inköpslista", 
+    "Handla", 
+    "Byt lakan"
+];
+*/
 
 //list.append(todo);
 
