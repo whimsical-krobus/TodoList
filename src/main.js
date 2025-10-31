@@ -64,6 +64,8 @@ const todo = [
 
 const list = document.createElement("ul");
 
+app.appendChild(list);
+
 console.log(todo);
 
 //list.append(todo);
