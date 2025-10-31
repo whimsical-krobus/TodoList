@@ -39,8 +39,8 @@ const todos = [
 /*================================================================================== Checkbox Function: ==================================================================================*/
 
 // Add a ul list and append it to app:
-const list = document.createElement("ul");
-todoWrapper.appendChild(list);
+const toBeDoneList = document.createElement("ul");
+todoWrapper.appendChild(toBeDoneList);
 
 // Add function to handle checkbox:
 function removeItem(event){
@@ -63,7 +63,7 @@ todos.forEach(todo => {
     itemText.textContent = todo;
 
     // Append everything to parent-elements:
-    list.appendChild(item);
+    toBeDoneList.appendChild(item);
     item.appendChild(checkbox);
     item.appendChild(itemText);
 }); 
@@ -82,7 +82,12 @@ doneHeading.appendChild(headingDone);
 doneWrapper.appendChild(doneHeading);
 
 // Add new empty list to move items to when they are marked as done:
+const doneList = document.createElement("ul");
+doneWrapper.appendChild(doneList);
+
+console.log(doneWrapper);
 //const done = ["Dammsug", "Skura badrum"];
+//doneList.appendChild(done);
 
 // Add a function to move items that are marked as done to done list:
 
