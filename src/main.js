@@ -62,9 +62,9 @@ const todo = [
 
 // loop through each todo/length of list?
 
-const list = [todo1, todo2, todo3, todo4, todo5, todo6, todo7];
+const list = document.createElement("ul");
 
-console.log(list);
+console.log(todo);
 
 //list.append(todo);
 
