@@ -3,7 +3,7 @@ import "./style.css";
 // Create reference to html-element app
 const app = document.getElementById("app");
 
-
+/*
 // Add class for objects and a constructor named todo to make todos list of objects:
 
 class Todo {
@@ -44,10 +44,11 @@ list.forEach((todo) => {
     //div.appendChild(task);
     app.appendChild(div);
 });
+*/
 
 // Use push() Method to add objects to list:
 
-/*
+
 const todo = [
     "Boka tvättid", 
     "Släng sopor", 
@@ -56,7 +57,7 @@ const todo = [
     "Handla", 
     "Byt lakan"
 ];
-*/
+
 
 
 // loop through each todo/length of list?
