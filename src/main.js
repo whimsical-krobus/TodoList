@@ -71,7 +71,8 @@ todos.forEach(todo => {
 /*================================================================================== Done List: ==================================================================================*/
 
 // Add a div to wrap around Done list:
-
+const doneWrapper = document.createElement("div");
+app.appendChild(doneWrapper);
 
 // Add a h2 heading to done list:
 
