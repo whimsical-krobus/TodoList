@@ -75,6 +75,11 @@ const doneWrapper = document.createElement("div");
 app.appendChild(doneWrapper);
 
 // Add a h2 heading to done list:
+const doneHeading = document.createElement("h2");
+const headingDone = document.createTextNode("Done:");
+
+doneHeading.appendChild(headingDone);
+doneWrapper.appendChild(doneHeading);
 
 // Add new empty list to move items to when they are marked as done:
 
