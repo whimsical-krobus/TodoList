@@ -75,13 +75,15 @@ todo.forEach(todos => {
     const item = document.createElement("li");
 
     //Add checkbox to item:
-    
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
 
     // Add todo text:
     const itemText = document.createElement("span");
     itemText.textContent = todos;
 
     list.appendChild(item);
+    item.appendChild(checkbox);
     item.appendChild(itemText);
 }); 
 
