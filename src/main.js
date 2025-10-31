@@ -82,6 +82,7 @@ doneHeading.appendChild(headingDone);
 doneWrapper.appendChild(doneHeading);
 
 // Add new empty list to move items to when they are marked as done:
+//const done = ["Dammsug", "Skura badrum"];
 
 // Add a function to move items that are marked as done to done list:
 
