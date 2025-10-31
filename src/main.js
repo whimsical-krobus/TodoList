@@ -1,5 +1,8 @@
 import "./style.css";
 
+// Create reference to html-element app
+const app = document.getElementById("app");
+
 // Add class for objects and a constructor named todo to make todos list of objects:
 
 class Todo {
@@ -8,7 +11,7 @@ class Todo {
     }
 }
 
-const app = document.getElementById("app");
+
 
 // Add new todo for each list title:
 const todo1 = new Todo("Städa");
