@@ -47,19 +47,19 @@ list.forEach((todo) => {
     const div = document.createElement("div");
     const title = document.createElement("h2");
     const isDone = document.createElement("input");
-    const task = document.createElement("input");
+    //const task = document.createElement("input");
 
-    div.className = div; // varför funkar det med div och inte "wrapper"?
-    title.innerHTML = list.toString(todo1);
+    div.className = div; // why does it work with div and not if I name it "wrapper"?
+    title.innerHTML = todo.toString();
     isDone.type = "checkbox";
     isDone.checked = div.isDone;
     isDone.disabled = true;
-    task.type = "form";
+    //task.type = "form";
 
 
     div.appendChild(title);
     div.appendChild(isDone);
-    div.appendChild(task);
+    //div.appendChild(task);
     app.appendChild(div);
 });
 
