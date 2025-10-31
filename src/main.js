@@ -12,8 +12,6 @@ class Todo {
     }
 }
 
-
-
 // Add new todo for each list title:
 const todo1 = new Todo("Städa");
 const todo2 = new Todo("Boka tvättid");
@@ -22,12 +20,6 @@ const todo4 = new Todo("Töm diskmaskin");
 const todo5 = new Todo("Skriv inköpslista");
 const todo6 = new Todo("Handla");
 const todo7 = new Todo("Byt lakan");
-
-// loop through each todo/length of list? Use toString() Method!
-
-const list = [todo1, todo2, todo3, todo4, todo5, todo6, todo7];
-
-console.log(list);
 
 list.forEach((todo) => {
     console.log(todo);
@@ -65,6 +57,13 @@ const todo = [
     "Byt lakan"
 ];
 */
+
+
+// loop through each todo/length of list?
+
+const list = [todo1, todo2, todo3, todo4, todo5, todo6, todo7];
+
+console.log(list);
 
 //list.append(todo);
 
