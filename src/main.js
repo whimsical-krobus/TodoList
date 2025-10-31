@@ -74,6 +74,8 @@ app.appendChild(list);
 todo.forEach(todos => {
     const item = document.createElement("li");
 
+    // Add todo text:
+
     list.appendChild(item);
 }); 
 
