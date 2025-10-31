@@ -75,8 +75,11 @@ todo.forEach(todos => {
     const item = document.createElement("li");
 
     // Add todo text:
+    const itemText = document.createElement("span");
+    itemText.textContent = todos;
 
     list.appendChild(item);
+    item.appendChild(itemText);
 }); 
 
 console.log(todo);
