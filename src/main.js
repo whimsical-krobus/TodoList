@@ -12,6 +12,11 @@ title.appendChild(text);
 app.appendChild(title);
 
 // Add a h2 heading to todos list:
+const todosHeading = document.createElement("h2");
+const headingTodo = document.createTextNode("To be done:");
+
+todosHeading.appendChild(headingTodo);
+app.appendChild(todosHeading);
 
 // Create a list of todos:
 const todos = [
