@@ -43,9 +43,11 @@ const toBeDoneList = document.createElement("ul");
 todoWrapper.appendChild(toBeDoneList);
 
 // Add function to handle checkbox:
-function removeItem(event){
+function moveItem(event){
     if (event.target.checked) {
-        event.target.parentElement.remove();
+        doneList.appendChild(event.target.parentElement);
+    } else {
+        toBeDoneList.appendChild(event.target.parentElement);
     }
 }
 
@@ -56,7 +58,7 @@ todos.forEach(todo => {
     //Add checkbox to item:
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.addEventListener("change", removeItem);
+    checkbox.addEventListener("change", moveItem);
 
     // Add todo text:
     const itemText = document.createElement("span");
