@@ -47,7 +47,11 @@ list.forEach((todo) => {
 */
 
 // Use push() Method to add objects to list:
+const title = document.createElement("h1");
+const text = document.createTextNode("Todo List:");
 
+title.appendChild(text);
+app.appendChild(title);
 
 const todo = [
     "Boka tvättid", 
@@ -59,12 +63,12 @@ const todo = [
 ];
 
 
-
 // loop through each todo/length of list?
 
 const list = document.createElement("ul");
 
 app.appendChild(list);
+
 
 console.log(todo);
 
