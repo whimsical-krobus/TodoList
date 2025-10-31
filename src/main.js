@@ -16,6 +16,7 @@ app.appendChild(title);
 /*================================================================================== To Be Done List: ==================================================================================*/
 
 // Add a div to wrap around To Be Done list:
+const todoWrapper = document.getElementById("div");
 
 
 // Add a h2 heading to todos list:
