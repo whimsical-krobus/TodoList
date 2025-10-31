@@ -1,6 +1,6 @@
 import "./style.css";
 
-// Create reference to html-element app
+// Create reference to html-element app:
 const app = document.getElementById("app");
 
 /*
@@ -68,6 +68,9 @@ const todo = [
 const list = document.createElement("ul");
 
 app.appendChild(list);
+
+
+// Add todo contents (todos) as list items:
 
 
 console.log(todo);
