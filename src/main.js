@@ -16,15 +16,15 @@ app.appendChild(title);
 /*================================================================================== To Be Done List: ==================================================================================*/
 
 // Add a div to wrap around To Be Done list:
-const todoWrapper = document.getElementById("div");
-
+const todoWrapper = document.createElement("div");
+app.appendChild(todoWrapper);
 
 // Add a h2 heading to todos list:
 const todosHeading = document.createElement("h2");
 const headingTodo = document.createTextNode("To Be Done:");
 
 todosHeading.appendChild(headingTodo);
-app.appendChild(todosHeading);
+todoWrapper.appendChild(todosHeading);
 
 // Create a list of todos:
 const todos = [
@@ -40,7 +40,7 @@ const todos = [
 
 // Add a ul list and append it to app:
 const list = document.createElement("ul");
-app.appendChild(list);
+todoWrapper.appendChild(list);
 
 // Add function to handle checkbox:
 function removeItem(event){
@@ -82,4 +82,4 @@ todos.forEach(todo => {
 /*================================================================================== Console Log: ==================================================================================*/
 
 // Print out todos in console:
-// console.log(todo);
+ console.log(todoWrapper);
